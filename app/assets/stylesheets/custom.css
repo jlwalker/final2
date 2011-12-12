@@ -3,7 +3,7 @@ width: 710px;
 }
 
 body {
-background: #0066CC;
+background: #000000;
 }
 
 header {
@@ -12,28 +12,27 @@ padding-top: 20px;
 
 header img {
 padding: 1em;
-background: #fff;
+background: #000;
 }
 
 section {
 margin-top: 1em;
 font-size: 120%;
-padding: 20px;
-background: #fff;
+padding: 25px;
+background: #000000;
 }
 
 a {
-color: #09c;
-text-decoration: none;
+color: #FFFF00;
 }
 
 a:hover {
-color: #069;
+color: #FFFF00;
 text-decoration: underline;
 }
 
 a:visited {
-color: #069;
+color: #FFFF00;
 }
 
 nav {
@@ -60,7 +59,6 @@ font-weight: bold;
 }
 
 nav ul li a:visited {
-color: #09c;
 }
 
 nav ul li a:hover {
@@ -68,30 +66,48 @@ text-decoration: underline;
 }
 
 a.signup_button{
-margin-left: auto;
-margin-right: auto;
+margin-left: 0px;
 display: block;
 text-align: center;
-width: 190px;
-color: #000000;
-background: #6299C5;
-font-size: 150%;
+width: 100px;
+color: #FFFF00;
+background: #565656;
+font-size: 100%;
 font-weight: bold;
-padding: 20px;
+padding: 5px;
 }
 
 .round {
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
+background: #000000;
+color: #FFFF00;
 }
 
 footer {
 text-align: center;
 margin-top: 10px;
-width: 140px;
+margin-left: 20px;
+width: 120px;
 }
 
 footer nav {
 float: none;
+}
+
+.stat{
+background: #000000;
+}
+
+h1 {
+color:#FFFF00;
+}
+
+h2 {
+color:#FFFF00;
+}
+
+h3 {
+color:#FFFF00;
 }
