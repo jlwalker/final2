@@ -17,10 +17,10 @@ describe "LayoutLinks" do
       response.should have_selector("title", :content => "About")
     end
     
-#     it "should have a sign-up page at '/signup'" do
-#      get '/signup'
-#      response.should have_selector("title", :content => "Sign up")
-#    end
+     it "should have a sign-up page at '/signup'" do
+      get '/signup'
+      response.should have_selector("title", :content => "Sign up")
+    end
     
     it "should have the right links on the layout" do
       visit root_path
@@ -32,7 +32,7 @@ describe "LayoutLinks" do
       click_link "Home"
       response.should have_selector('title', :content => "Home")
       click_link "Sign up now"
- #     response.should have_selector('title', :content => "Sign up")
+      response.should have_selector('title', :content => "Sign up")
       response.should have_selector('a[href="/"]>img')
     end
 end
