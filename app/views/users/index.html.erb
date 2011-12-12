@@ -1,19 +1,17 @@
 <h1>Current users</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
 
+<%= will_paginate %>
+
+<ul>
 <% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-    <td><%= user.email %></td>
-  </tr>
+  <li><%= link_to user.name, user %> 
+      <%= user.email %>
+  </li>
 <% end %>
-</table>
+</ul>
 
+<%= will_paginate %>
 <br />
 
-<%= link_to 'Home', root_path %>
+<%= link_to 'Home', root_path , root_path %>

@@ -2,4 +2,11 @@
 <p>Thank you for visiting Not Another Social Site!</p>
 <p>Share you life with everybody!</p>
 
+<% if signed_in? %>
+<h1 class="micropost">What's up?</h1>
+<%= render 'shared/micropost_form' %>
+<%= render 'shared/user_info' %>
+<%= render 'shared/stats.html.erb'%>
+<% else %>
 <%= link_to "Sign up", new_user_path, :class => "signup_button round" %>
+<% end %>

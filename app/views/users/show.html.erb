@@ -1,8 +1,26 @@
-<h1>Account information</h1>
-
-<p> <strong>Name:</strong> <%= @user.name %></p>
+<h1><%= @user.name %></h1>
+<p>Find me in app/views/users/show.html.erb</p>
 
 <p> <strong>Email:</strong> <%= @user.email %></p>
+
+<%= render 'shared/stats' %>
+
+<%= render 'follow_form' if signed_in? %>
+<hr/>
+<p> <strong>Number of microposts:</strong> <%= @user.microposts.count %></p>
+
+<% unless @user.microposts.empty? %>
+<div class="micropost-lists">
+<h2>Microposts</h2>
+<table>
+<%= render @microposts %>
+</table>
+<%= will_paginate @microposts %>
+</div>
+<% end %>
+
+<hr/>
+
 
 <%= link_to 'Home',  root_path %>
 
