@@ -1,4 +1,4 @@
-SampleApp110811::Application.routes.draw do
+Finalproject::Application.routes.draw do
   resources :users do
     member do
       get :following, :followers
@@ -11,7 +11,6 @@ SampleApp110811::Application.routes.draw do
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
-  match '/help', :to => 'pages#help'
   match '/signup', :to => 'users#new'
   match '/signin', :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
